@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC01_LoginWithValidUsernamePassword : MyTestBase
     {
+        [TestCategory("Base")]
         [TestMethod]
         public void RunTest_TC01()
         {

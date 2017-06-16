@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC15_NewPOISuccessfullyEdited : MyTestBase
     {
+        [TestCategory("Edit Function")]
         [TestMethod]
         public void RunTest_TC15()
         {

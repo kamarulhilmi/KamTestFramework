@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC08_UserGroupSuccessfullyAdded : MyTestBase
     {
+        [TestCategory("Add Function")]
         [TestMethod]
         public void RunTest_TC08()
         {

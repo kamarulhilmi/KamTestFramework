@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC12_NewRouteSuccessfullyEdited : MyTestBase
     {
+        [TestCategory("Edit Function")]
         [TestMethod]
         public void RunTest_TC12()
         {
@@ -17,7 +18,7 @@ namespace KamTests
             Pages.MapDashboard.Route();
             Assert.IsTrue(Pages.Route.IsAt(), "The user can't access Route page.");
 
-            Pages.AddRoute.EditRoute("AutoTestRoute01");
+            Pages.AddRoute.EditRoute("AutoTestRoute");
             Pages.AddRoute.ConfirmEdit();
 
         }

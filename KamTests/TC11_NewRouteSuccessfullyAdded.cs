@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC11_NewRouteSuccessfullyAdded : MyTestBase
     {
+        [TestCategory("Add Function")]
         [TestMethod]
         public void RunTest_TC11()
         {
@@ -19,7 +20,7 @@ namespace KamTests
 
             Pages.Route.AddRoute();
             Pages.AddRoute.AddNewRoute(
-                "AutoTestRoute02", //route name
+                "AutoTestRoute", //route name
                 "FF17E0");          //route color
             Pages.AddRoute.Confirm();
 

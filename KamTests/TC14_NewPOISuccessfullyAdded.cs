@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC14_NewPOISuccessfullyAdded : MyTestBase
     {
+        [TestCategory("Add Function")]
         [TestMethod]
         public void RunTest_TC14()
         {

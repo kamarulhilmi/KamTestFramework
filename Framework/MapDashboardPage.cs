@@ -21,7 +21,7 @@ namespace Framework
 
         public bool IsPOIvisible()
         {
-            By element = By.XPath("//a[contains(text(),'POI Management')]");
+            By element = By.XPath("//a[contains(text(),'POI')]");
             return WaitUntilElementDisplayed(element, PAGE_LOAD_TIMEOUT);
         }
 
@@ -160,7 +160,7 @@ namespace Framework
         {
             var menu = Driver.FindElement(By.Id("menu1"));
             var subMenu = Driver.FindElement(By.XPath("//a[contains(text(),'Map')]"));
-            var POI = Driver.FindElement(By.XPath("//a[contains(text(),'POI Management')]"));
+            var POI = Driver.FindElement(By.XPath("//a[contains(text(),'POI')]"));
             Actions action = new Actions(webDriver);
 
             menu.Click();
@@ -169,11 +169,11 @@ namespace Framework
 
             do
             {
-                if (IsElementPresent(By.XPath("//a[contains(text(),'POI Management')]")))
+                if (IsElementPresent(By.XPath("//a[contains(text(),'POI')]")))
                 {
                     try
                     {
-                        Assert.IsTrue(Pages.MapDashboard.IsPOIvisible(), "The route web element is not display");
+                        Assert.IsTrue(Pages.MapDashboard.IsPOIvisible(), "The poi web element is not display");
                         POI.Click();
                         break;
                     }

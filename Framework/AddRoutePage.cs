@@ -101,6 +101,9 @@ namespace Framework
         {
             var deleteRouteButton = Driver.FindElement(By.XPath(v));
             deleteRouteButton.Click();
+
+            var toConfirmDelete = Driver.FindElement(By.XPath("//button[contains(text(),'Yes')]"));
+            toConfirmDelete.Click();
         }
     }
 }

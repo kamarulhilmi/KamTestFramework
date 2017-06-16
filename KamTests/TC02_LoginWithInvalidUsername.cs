@@ -5,8 +5,9 @@ using Framework;
 namespace KamTests
 {
     [TestClass]
-    public class UnitTest1 : MyTestBase
+    public class TC02_LoginWithInvalidUsername : MyTestBase
     {
+        [TestCategory("Base")]
         [TestMethod]
         public void RunTest_TC02()
         {

@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC10_UserGroupSuccessfullyDeleted : MyTestBase
     {
+        [TestCategory("Delete Function")]
         [TestMethod]
         public void RunTest_TC10()
         {

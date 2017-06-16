@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC16_NewPOISuccessfullyDelete : MyTestBase
     {
+        [TestCategory("Delete Function")]
         [TestMethod]
         public void RunTest_TC16()
         {

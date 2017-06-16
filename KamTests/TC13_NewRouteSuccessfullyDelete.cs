@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC13_NewRouteSuccessfullyDelete : MyTestBase
     {
+        [TestCategory("Delete Function")]
         [TestMethod]
         public void RunTest_TC13()
         {
@@ -17,7 +18,7 @@ namespace KamTests
             Pages.MapDashboard.Route();
             Assert.IsTrue(Pages.Route.IsAt(), "The user can't access User Group page.");
 
-            Pages.AddRoute.DeleteRoute("AutoTestRoute01");
+            Pages.AddRoute.DeleteRoute("AutoTestRoute");
             Pages.AddRoute.ConfirmDelete();
 
         }

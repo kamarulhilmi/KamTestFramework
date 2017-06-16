@@ -7,6 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC03_LoginWithInvalidPassword : MyTestBase
     {
+        [TestCategory("Base")]
         [TestMethod]
         public void RunTest_TC03()
         {

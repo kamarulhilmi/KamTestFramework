@@ -14,7 +14,7 @@ namespace Framework
 
         public bool IsAt()
         {
-            By element = By.XPath("//label[contains(text(),'POI Management')]");
+            By element = By.XPath("//label[contains(text(),'POI')]");
             return WaitUntilElementDisplayed(element, PAGE_LOAD_TIMEOUT);
         }
 
