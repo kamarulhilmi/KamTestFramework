@@ -7,7 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC13_NewRouteSuccessfullyDelete : MyTestBase
     {
-        [TestCategory("Delete Function")]
+        [TestCategory("(4) Delete Function")]
         [TestMethod]
         public void RunTest_TC13()
         {

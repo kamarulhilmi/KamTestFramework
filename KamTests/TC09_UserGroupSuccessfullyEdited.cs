@@ -7,7 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC09_UserGroupSuccessfullyEdited : MyTestBase
     {
-        [TestCategory("Edit Function")]
+        [TestCategory("(3) Edit Function")]
         [TestMethod]
         public void RunTest_TC09()
         {

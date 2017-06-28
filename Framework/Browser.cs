@@ -15,8 +15,8 @@ namespace Framework
         //private static IWebDriver webDriver = new FirefoxDriver();
         //private static IWebDriver webDriver = new InternetExplorerDriver(@"C:\library");
 
-        private static string baseUrl = "http://172.17.11.110:1010";
-        //private static string baseUrl = "http://172.17.11.83:7882";
+        //private static string baseUrl = "http://172.17.11.110:1010";
+        private static string baseUrl = "http://172.17.11.83:7882";
 
         internal static bool WaitUntilElementDisplayed(By element, int timeout)
         {
@@ -75,6 +75,7 @@ namespace Framework
 
         public static void Quit()
         {
+            webDriver.Manage().Cookies.DeleteAllCookies();
             webDriver.Quit();
         }
 

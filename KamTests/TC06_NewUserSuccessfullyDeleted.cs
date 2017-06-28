@@ -7,7 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC06_NewUserSuccessfullyDeleted : MyTestBase
     {
-        [TestCategory("Delete Function")]
+        [TestCategory("(4) Delete Function")]
         [TestMethod]
         public void RunTest_TC06()
         {

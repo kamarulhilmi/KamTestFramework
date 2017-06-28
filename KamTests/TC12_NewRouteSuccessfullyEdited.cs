@@ -7,7 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC12_NewRouteSuccessfullyEdited : MyTestBase
     {
-        [TestCategory("Edit Function")]
+        [TestCategory("(3) Edit Function")]
         [TestMethod]
         public void RunTest_TC12()
         {

@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Framework;
 
@@ -7,7 +7,7 @@ namespace KamTests
     [TestClass]
     public class TC01_LoginWithValidUsernamePassword : MyTestBase
     {
-        [TestCategory("Base")]
+        [TestCategory("(1) Base")]
         [TestMethod]
         public void RunTest_TC01()
         {
