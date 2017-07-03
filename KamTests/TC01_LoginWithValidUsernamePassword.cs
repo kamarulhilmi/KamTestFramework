@@ -1,14 +1,11 @@
-﻿
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC01_LoginWithValidUsernamePassword : MyTestBase
     {
-        [TestCategory("(1) Base")]
-        [NUnit.Framework.Test]
+        [Test]
         public void RunTest_TC01_LoginWithValidUsernamePassword()
         {
             Pages.Login.Goto();

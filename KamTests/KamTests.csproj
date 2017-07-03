@@ -60,6 +60,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="KamTests001\LoginFunction.cs" />
     <Compile Include="TC16_NewPOISuccessfullyDelete.cs" />
     <Compile Include="TC15_NewPOISuccessfullyEdited.cs" />
     <Compile Include="TC14_NewPOISuccessfullyAdded.cs" />

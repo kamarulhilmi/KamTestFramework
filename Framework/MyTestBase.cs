@@ -1,18 +1,14 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using RelevantCodes.ExtentReports;
 using System.IO;
 using Common.Reporting;
+using OpenQA.Selenium.Chrome;
+using System;
 
 namespace Framework
 {
     [TestFixture]
-    public abstract class MyTestBase
+    public abstract class MyTestBase : Browser
     {
         public static ReportingTasks reportingTasks;
 
@@ -27,7 +23,7 @@ namespace Framework
         public void TestCleanUp()
         {
             reportingTasks.FinalizeTest();
-            Browser.Quit();
+            webDriver.Manage().Cookies.DeleteAllCookies();
         }
 
         public static void BeginExecution()
@@ -37,10 +33,18 @@ namespace Framework
             extentReports.AddSystemInfo("Browser", "Chrome");
 
             reportingTasks = new ReportingTasks(extentReports);
+            
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(20);
+            webDriver.Manage().Window.Maximize();
         }
 
         public static void ExitExecution()
         {
+            if (webDriver != null)
+            {
+                webDriver.Quit();
+            }
             reportingTasks.CleanUpReporting();
         }
     }
