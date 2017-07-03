@@ -8,8 +8,8 @@ namespace KamTests
     public class TC03_LoginWithInvalidPassword : MyTestBase
     {
         [TestCategory("(1) Base")]
-        [TestMethod]
-        public void RunTest_TC03()
+        [NUnit.Framework.Test]
+        public void RunTest_TC03_LoginWithInvalidPassword()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "test");

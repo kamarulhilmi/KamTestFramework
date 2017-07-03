@@ -14,10 +14,10 @@
     <protocol>https</protocol>
 
     <!-- title of the document -->
-    <documentTitle>Kam Automation</documentTitle>
+    <documentTitle>TAT Automation</documentTitle>
 
     <!-- report name - displayed at top-nav -->
-    <reportName>Kam Test Execution Report - </reportName>
+    <reportName>TAT Test Execution Report - </reportName>
 
     <!-- report headline - displayed at top-nav, after reportHeadline -->
     <reportHeadline>Regression Tests</reportHeadline>

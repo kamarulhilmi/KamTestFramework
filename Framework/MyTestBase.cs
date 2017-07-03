@@ -15,6 +15,7 @@ namespace Framework
     public abstract class MyTestBase
     {
         public static ReportingTasks reportingTasks;
+
         [SetUp]
         public void TestSetup()
         {

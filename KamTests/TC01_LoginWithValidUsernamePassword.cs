@@ -8,8 +8,8 @@ namespace KamTests
     public class TC01_LoginWithValidUsernamePassword : MyTestBase
     {
         [TestCategory("(1) Base")]
-        [TestMethod]
-        public void RunTest_TC01()
+        [NUnit.Framework.Test]
+        public void RunTest_TC01_LoginWithValidUsernamePassword()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");

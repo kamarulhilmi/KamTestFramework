@@ -8,8 +8,8 @@ namespace KamTests
     public class TC02_LoginWithInvalidUsername : MyTestBase
     {
         [TestCategory("(1) Base")]
-        [TestMethod]
-        public void RunTest_TC02()
+        [NUnit.Framework.Test]
+        public void RunTest_TC02_LoginWithInvalidUsername()
         {
             Pages.Login.Goto();
             Pages.Login.Login("invalidusername", "admin");
