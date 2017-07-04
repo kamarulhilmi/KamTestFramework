@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC16_NewPOISuccessfullyDelete : MyTestBase
     {
-        [TestCategory("(4) Delete Function")]
-        [TestMethod]
-        public void RunTest_TC16()
+        [Test]
+        public void RunTest_TC16_NewPOISuccessfullyDelete()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -20,7 +17,6 @@ namespace KamTests
 
             Pages.POIManagement.DeletePOI("AutoTestPOI");
             Pages.POIManagement.ConfirmDelete();
-
         }
     }
 }

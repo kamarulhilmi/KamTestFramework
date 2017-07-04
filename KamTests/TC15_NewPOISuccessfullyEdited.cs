@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC15_NewPOISuccessfullyEdited : MyTestBase
     {
-        [TestCategory("(3) Edit Function")]
-        [TestMethod]
-        public void RunTest_TC15()
+        [Test]
+        public void RunTest_TC15_NewPOISuccessfullyEdited()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -20,8 +17,6 @@ namespace KamTests
 
             Pages.POIManagement.EditPOI("AutoTestPOI");
             Pages.POIManagement.ConfirmEdit();
-
-
         }
     }
 }

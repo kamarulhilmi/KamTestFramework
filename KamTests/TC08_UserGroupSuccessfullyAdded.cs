@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC08_UserGroupSuccessfullyAdded : MyTestBase
     {
-        [TestCategory("(2) Add Function")]
-        [TestMethod]
-        public void RunTest_TC08()
+        [Test]
+        public void RunTest_TC08_UserGroupSuccessfullyAdded()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");

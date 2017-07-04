@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC09_UserGroupSuccessfullyEdited : MyTestBase
     {
-        [TestCategory("(3) Edit Function")]
-        [TestMethod]
-        public void RunTest_TC09()
+        [Test]
+        public void RunTest_TC09_UserGroupSuccessfullyEdited()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");

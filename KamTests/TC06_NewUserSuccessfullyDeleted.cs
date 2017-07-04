@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC06_NewUserSuccessfullyDeleted : MyTestBase
     {
-        [TestCategory("(4) Delete Function")]
-        [TestMethod]
-        public void RunTest_TC06()
+        [Test]
+        public void RunTest_TC06_NewUserSuccessfullyDeleted()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");

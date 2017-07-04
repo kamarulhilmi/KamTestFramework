@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC04_NewUserSuccessfullyAdded : MyTestBase
     {
-        [TestCategory("(2) Add Function")]
-        [TestMethod]
-        public void RunTest_TC04()
+        [Test]
+        public void RunTest_TC04_NewUserSuccessfullyAdded()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -22,7 +19,7 @@ namespace KamTests
             Assert.IsTrue(Pages.AddNewUser.IsAt(), "The user can't access add user page");
 
             Pages.AddNewUser.AddUser(
-                "AutomationTest",
+                "AutomationTest01",
                 "Test Engineer",
                 "kamarulhilmi@recogine.com",
                 "Damansara",

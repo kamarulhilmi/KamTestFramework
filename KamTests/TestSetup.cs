@@ -1,5 +1,4 @@
-﻿
-using Framework;
+﻿using Framework;
 using NUnit.Framework;
 
 namespace KamTests

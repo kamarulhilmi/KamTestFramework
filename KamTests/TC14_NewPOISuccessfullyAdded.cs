@@ -1,15 +1,11 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC14_NewPOISuccessfullyAdded : MyTestBase
     {
-        [TestCategory("(2) Add Function")]
-        [TestMethod]
-        public void RunTest_TC14()
+        public void RunTest_TC14_NewPOISuccessfullyAdded()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -26,7 +22,6 @@ namespace KamTests
                 "Gym",
                 "24 Hours & 7 Days");
             Pages.AddPOI.Confirm();
-
         }
     }
 }

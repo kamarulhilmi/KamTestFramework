@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Framework;
 
 namespace KamTests
 {
-    [TestClass]
     public class TC07_NewUserPasswordSuccessfullyReset : MyTestBase
     {
-        [TestCategory("(3) Edit Function")]
-        [TestMethod]
-        public void RunTest_TC07()
+        [Test]
+        public void RunTest_TC07_NewUserPasswordSuccessfullyReset()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
