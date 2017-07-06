@@ -47,7 +47,7 @@ namespace Framework
             IList<IWebElement> collectionOfRows = table.FindElements(By.XPath("//*[@id='tableData']/tbody/tr"));
 
             var columnCounter = 1;
-            var columnIndex = 12;
+            var columnIndex = 13;
             string DESIRED_VALUE = editeduser;
 
             //logic
@@ -124,7 +124,7 @@ namespace Framework
             IList<IWebElement> collectionOfRows = table.FindElements(By.XPath("//*[@id='tableData']/tbody/tr"));
 
             var columnCounter = 1;
-            var columnIndex = 12;
+            var columnIndex = 13;
             string DESIRED_VALUE = resetPassword;
 
             //logic

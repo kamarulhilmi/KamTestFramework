@@ -3,10 +3,10 @@ using Framework;
 
 namespace KamTests
 {
-    public class TC07_NewUserPasswordSuccessfullyReset : MyTestBase
+    public class TestSet04_ResetPasswordFunction : MyTestBase
     {
         [Test]
-        public void RunTest_TC07_NewUserPasswordSuccessfullyReset()
+        public void RunTest_TC08_NewUserPasswordSuccessfullyReset()
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -15,9 +15,8 @@ namespace KamTests
             Pages.MapDashboard.UserManagement();
             Assert.IsTrue(Pages.UserManagement.IsAt(), "The user can't access user management page.");
 
-            Pages.UserManagement.ResetPassword("AutomationTesting");
+            Pages.UserManagement.ResetPassword("AutomationTesting03");
             Pages.UserManagement.ConfirmResetPassword();
-
         }
     }
 }

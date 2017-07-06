@@ -1,19 +1,19 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Framework
 {
     public class Browser
     {
         public static IWebDriver webDriver = new ChromeDriver(@"C:\library");
-        //private static IWebDriver webDriver = new FirefoxDriver();
-        //private static IWebDriver webDriver = new InternetExplorerDriver(@"C:\library");
+        //public static IWebDriver webDriver = new FirefoxDriver();
+        //public static IWebDriver webDriver = new InternetExplorerDriver(@"C:\library");
+        //public static IWebDriver webDriver = new EdgeDriver(@"C:\library");
 
         //private static string baseUrl = "http://172.17.11.110:1010";
         //private static string baseUrl = "http://172.17.11.83:7882";

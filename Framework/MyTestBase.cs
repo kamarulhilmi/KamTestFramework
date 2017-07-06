@@ -33,7 +33,7 @@ namespace Framework
             extentReports.AddSystemInfo("Browser", "Chrome");
 
             reportingTasks = new ReportingTasks(extentReports);
-            
+
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(20);
             webDriver.Manage().Window.Maximize();

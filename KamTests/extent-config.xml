@@ -3,7 +3,7 @@
   <configuration>
     <!-- report theme -->
     <!-- standard, dark -->
-    <theme>standard</theme>
+    <theme>dark</theme>
 
     <!-- document encoding -->
     <!-- defaults to UTF-8 -->
@@ -14,10 +14,10 @@
     <protocol>https</protocol>
 
     <!-- title of the document -->
-    <documentTitle>TAT Automation</documentTitle>
+    <documentTitle>SQA Test Automation</documentTitle>
 
     <!-- report name - displayed at top-nav -->
-    <reportName>TAT Test Execution Report - </reportName>
+    <reportName>KESAS TCSS Test Execution Report - </reportName>
 
     <!-- report headline - displayed at top-nav, after reportHeadline -->
     <reportHeadline>Regression Tests</reportHeadline>
@@ -43,7 +43,7 @@
     <styles>
       <![CDATA[
        .logo-content, nav{
-        background-color: #ff8f00;
+        background-color: #050200;
        }    
                             
       .nav-right li {
