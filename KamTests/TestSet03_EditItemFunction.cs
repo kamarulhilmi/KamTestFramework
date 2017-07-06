@@ -5,8 +5,11 @@ namespace KamTests
 {
     public class TestSet03_EditItemFunction : MyTestBase
     {
-        [Test]
-        public void RunTest_TC06_NewUserSuccessfullyEdited()
+        [TestCase("auto")]
+        [TestCase("qatest")]
+        [TestCase("AutomationTest05")]
+        [TestCase("AutomationTest06")]
+        public void RunTest_TC06_NewUserSuccessfullyEdited(string editeduser)
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -15,12 +18,15 @@ namespace KamTests
             Pages.MapDashboard.UserManagement();
             Assert.IsTrue(Pages.UserManagement.IsAt(), "The user can't access user management page.");
 
-            Pages.UserManagement.EditUser("AutomationTesting03");
+            Pages.UserManagement.EditUser(editeduser);
             Pages.UserManagement.ConfirmEdit();
         }
 
-        [Test]
-        public void RunTest_TC10_UserGroupSuccessfullyEdited()
+        [TestCase("auto")]
+        [TestCase("qatest")]
+        [TestCase("AutomationTest05")]
+        [TestCase("AutomationTest06")]
+        public void RunTest_TC10_UserGroupSuccessfullyEdited(string editedgroup)
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -29,7 +35,7 @@ namespace KamTests
             Pages.MapDashboard.UserGroup();
             Assert.IsTrue(Pages.UserGroup.IsAt(), "The user can't access User Group page.");
 
-            Pages.UserGroup.EditUserGroup("AutomationTest03");
+            Pages.UserGroup.EditUserGroup(editedgroup);
             Pages.UserGroup.ConfirmEdit();
         }
 

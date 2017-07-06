@@ -19,17 +19,17 @@ namespace KamTests
             Assert.IsTrue(Pages.AddNewUser.IsAt(), "The user can't access add user page");
 
             Pages.AddNewUser.AddUser(
-                "AutomationTest",
+                "AutomationTest06",
                 "Test Engineer",
                 "kamarulhilmi@recogine.com",
                 "Damansara",
-                "AutomationTest", //username
-                "Admin", //usergroupName (Admin/Operation/Maintenance)
-                "AutomationTest", //password
+                "AutomationTest06", //username
+                "Operation", //usergroupName (Admin/Operation/Maintenance)
+                "AutomationTest06", //password
                 "Female",
                 "0135906715",
                 "1991/01/05",
-                "AutomationTest" //confirmpassword
+                "AutomationTest06" //confirmpassword
                 );
 
             Pages.UserManagement.AddNewUserConfirm();
