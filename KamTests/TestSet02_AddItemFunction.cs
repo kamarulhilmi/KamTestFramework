@@ -5,8 +5,13 @@ namespace KamTests
 {
     public class TestSet02_AddItemFunction : MyTestBase
     {
-        [Test]
-        public void RunTest_TC05_NewUserSuccessfullyAdded()
+        [TestCase("AutomationTest06", "Test Engineer", "kamarulhilmi@recogine.com", "Damansara", "AutomationTest06", "Operation", "auto", "Male", "0135906715", "1991/01/05", "auto")]
+        [TestCase("AutomationTest07", "Test Engineer", "kamarulhilmi@recogine.com", "Damansara", "AutomationTest07", "Operation", "auto", "Male", "0135906715", "1991/01/05", "auto")]
+        [TestCase("AutomationTest08", "Test Engineer", "kamarulhilmi@recogine.com", "Damansara", "AutomationTest08", "Operation", "auto", "Female", "0135906715", "1991/01/05", "auto")]
+        [TestCase("AutomationTest09", "Test Engineer", "kamarulhilmi@recogine.com", "Damansara", "AutomationTest09", "Operation", "auto", "Female", "0135906715", "1991/01/05", "auto")]
+        [TestCase("AutomationTest10", "Test Engineer", "kamarulhilmi@recogine.com", "Damansara", "AutomationTest10", "Operation", "auto", "Female", "0135906715", "1991/01/05", "auto")]
+        
+        public void RunTest_TC05_NewUserSuccessfullyAdded(string name, string position, string email, string address, string username, string usergroupName, string password, string gender, string contactNumber, string dob, string confirmPassword)
         {
             Pages.Login.Goto();
             Pages.Login.Login("admin", "admin");
@@ -18,19 +23,7 @@ namespace KamTests
             Pages.UserManagement.AddNewUser();
             Assert.IsTrue(Pages.AddNewUser.IsAt(), "The user can't access add user page");
 
-            Pages.AddNewUser.AddUser(
-                "AutomationTest06",
-                "Test Engineer",
-                "kamarulhilmi@recogine.com",
-                "Damansara",
-                "AutomationTest06", //username
-                "Operation", //usergroupName (Admin/Operation/Maintenance)
-                "AutomationTest06", //password
-                "Female",
-                "0135906715",
-                "1991/01/05",
-                "AutomationTest06" //confirmpassword
-                );
+            Pages.AddNewUser.AddUser(name, position, email, address, username, usergroupName, password, gender, contactNumber, dob, confirmPassword);
 
             Pages.UserManagement.AddNewUserConfirm();
         }

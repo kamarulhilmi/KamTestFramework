@@ -5,7 +5,7 @@ namespace KamTests
 {
     public class TestSet03_EditItemFunction : MyTestBase
     {
-        [TestCase("auto")]
+        [TestCase("auto1")]
         [TestCase("qatest")]
         [TestCase("AutomationTest05")]
         [TestCase("AutomationTest06")]
